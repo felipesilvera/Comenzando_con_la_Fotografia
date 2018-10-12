@@ -1,0 +1,246 @@
+*{
+  margin: 0;
+	padding: 0;
+}
+body{
+  font-family: 'Dancing Script', cursive;
+  background: #02010a;
+}
+a:active, a:active *  {
+  outline: none !important;
+  -moz-outline-style: none !important;
+}
+a:focus, a:focus * {
+  outline: none !important;
+  -moz-outline-style: none !important;
+}
+#contenido{
+ width: 900px;
+ margin-left: auto;
+ margin-right: auto;
+}
+header{
+  background-color: #5b7989;
+  border-radius: 10px 10px 0px 0px;
+  height: 70px;
+  animation: slider 2s;
+}
+.logo a {
+  color: white;
+  text-shadow: 2px 2px 2px #02010a;
+  padding: 10px 0px 20px 20px;
+  float: left;
+  text-decoration: none;
+}
+
+nav{
+  float: right;
+}
+ul{
+  display: flex;
+  padding-top: 20px;
+  padding-right: 20px;
+  list-style-type: none;
+}
+ul>li>a{
+  font-size: 24px;
+  color: white;
+  padding: 5px 10px 5px 10px;
+}
+li>a:hover{
+  color:  #FFC300;
+  transition: 1s;
+}
+.s1{
+  background-color: #82c3a6;
+}
+
+#section1>img{
+  -webkit-filter: drop-shadow(2px 2px 2px  #02010a);
+  filter: drop-shadow(2px 2px 2px #02010a);
+  min-width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 60%;
+  height: 60%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.s2{ background-color: #d5c75f;
+}
+
+#section2{
+ display: flex;
+}
+#section2 article{
+  width: 50%;
+  margin: 20px;
+}
+#section2 a{
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-size: 21px;
+}
+#section2 img{
+  -webkit-filter: drop-shadow(2px 2px 2px  #02010a);
+  filter: drop-shadow(2px 2px 2px #02010a);
+  min-width: 50%;
+  width: 100%;
+}
+#Hpaisaje img:hover{
+  transform: rotate(10deg);
+  transition-duration: 1s;
+  -webkit-filter: drop-shadow(2px 2px 3px #82c3a6);
+  filter: drop-shadow(2px 2px 3px #82c3a6);
+}
+#Hretrato img:hover{
+  transform: translate(20px, -5px);
+  transition-duration: 1s;
+  -webkit-filter: drop-shadow(2px 2px 3px  #82c3a6);
+  filter: drop-shadow(2px 2px 3px #82c3a6);
+}
+footer{
+  background-color: #C6d5c5;
+  display: flex;
+  border-radius: 0px 0px 10px 10px;
+}
+footer div{
+  padding: 30px 20px 30px 20px;
+  width: 25%;
+}
+footer a{
+  text-decoration: none;
+  display: block;
+  color: black;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+footer a:hover{
+  color:  #FFC300;
+  transition: 1s;
+}
+footer img {
+  -webkit-filter: drop-shadow(2px 2px 2px  #02010a);
+  filter: drop-shadow(2px 2px 2px #02010a);
+  padding-right: 5px;
+  width: 15px
+}
+#section3 {
+  display: block;
+}
+#section3 div {
+ padding-left: 20px;
+}
+
+#section3 img {
+  box-shadow: 2px 2px 2px  #02010a;
+  margin: 10px 10px 10px 10px;
+  width: 30%;
+}
+.blur {
+  -webkit-filter: blur(10px);
+  filter: blur(10px);
+
+}
+.grises {
+
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+.sepia {
+  -webkit-filter: sepia(90%);
+  filter: sepia(90%);
+}
+
+@media (max-width:900px) {
+ #contenido {
+  width: 100%;
+ }
+ header{
+   height:  20%;
+ }
+.logo {
+ width: 80%;
+  float: none;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.logo a{
+  text-align: center;
+  font-size: 1.2em;
+  padding: 0px;
+
+}
+nav{
+  width: 100%;
+  float: none;
+  display: flex;
+}
+
+nav ul{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 0 auto;
+  padding-right: 0px;
+}
+
+ ul>li>a {
+  font-size: 1.5em;
+}
+#section2 {
+  display: flex;
+  flex-direction: column;
+}
+#section2 article{
+ margin: 0;
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#section2 img{
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+footer{
+  flex-direction: column;
+}
+footer div {
+  width: 80%;
+  padding: 10px 10px 10px 10px;
+}
+footer h2 {
+  font-size: 1.2em;
+}
+footer p,a  {
+  font-size: 1em;
+}
+#section3 {
+  flex-direction: column;
+}
+#section3 div {
+  width: 80%;
+margin: 0 auto;
+  padding-left: 0px;
+}
+#section3 img {
+ margin: 0 auto;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+}
+@-webkit-keyframes slider{
+  0%{
+    margin-top: 150%;
+  }
+  60%{
+    margin-top: -5%;
+  }
+  100%{
+    margin-top: 0%;
+  }
+}
